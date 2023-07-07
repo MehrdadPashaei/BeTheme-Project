@@ -5,8 +5,6 @@ $mfont: 'Poppins', sans-serif;
 body{
     background-color: $contact-backgound-color;
     .page{
-      
-            
             position: absolute;
             top: 0;
             right: 0;
@@ -14,13 +12,16 @@ body{
             left: 0;
             font-family: $mfont;
             .title{
+                margin: auto;
                 text-align: center;
-                width: 100%;
-              
-                .title__p{
+                width: 70%;
+                .title_h1{
+                    font-size: 160px;
                     font-weight: 600;
-                    
-            
+                }
+                .title__p{
+                    font-size: 15px;
+                    font-weight: 300;
                 }
             }
     
@@ -44,7 +45,8 @@ body{
                         border-style: solid;
                         border-color:$contact-border-color;
                         font-family: $mfont;
-                        font-weight: 600;
+                        font-weight: 300;
+                        font-size: 15px;
                         border-width: 2.5px;
                         margin-left: auto;
                         margin-right: auto;
@@ -63,25 +65,42 @@ body{
             }
 
             .secondSection{
-                background-color: red;
+               hr{
+                width: 99vw;
+                height:0.1px;
+               }
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                gap:5px;
+                gap:0px;
+
                 .imageContainer{
-                    background-color: blue;
-                    max-width: 50%;
+             
+                    max-width: 90%;
                     .secondSection_image{
                         border-radius: 50%;
-                        max-width: 90%;
+                        max-width: 100%;
                     }
                 }
                 .secondSection__div{
-                    margin: 0px;
+                    
                     display: inline-block;
                     background-color: #8CD18C;
-                    .accountManagerInto{
+                    h3{
+                        font-size: 35px;
+                        font-weight: 400;
+                    }
+                    .position{
+                        color: #618C61;
+                    }
+                    p{
+                        font-size: 13px;
+                        font-weight: 400;
                         text-align: center;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
                     }
                 }
 
