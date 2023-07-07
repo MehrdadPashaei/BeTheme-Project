@@ -63,7 +63,7 @@ body .page .secondSection {
   gap: 0px;
 }
 body .page .secondSection hr {
-  width: 99vw;
+  width: 99%;
   height: 0.1px;
 }
 body .page .secondSection .imageContainer {
@@ -92,4 +92,25 @@ body .page .secondSection .secondSection__div p {
 body .page .secondSection .secondSection__div a {
   text-decoration: none;
   color: black;
+}
+body .page .thiredSection {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+body .page .thiredSection h3 {
+  text-align: center;
+}
+body .page .thiredSection .thiredSection__title {
+  padding-top: 0;
+  height: auto;
+  overflow: auto;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: RGB(126, 201, 126);
+  border-radius: 30px;
+}
+body .page .thiredSection .thiredSection__title h6 {
+  background-color: aquamarine;
 }/*# sourceMappingURL=main.css.map */

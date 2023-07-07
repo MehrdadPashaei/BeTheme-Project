@@ -66,7 +66,7 @@ body{
 
             .secondSection{
                hr{
-                width: 99vw;
+                width: 99%;
                 height:0.1px;
                }
                 display: flex;
@@ -104,6 +104,28 @@ body{
                     }
                 }
 
+            }
+
+            .thiredSection{
+                display: grid;
+                justify-items: center;
+                align-items: center;
+                grid-template-columns: repeat(auto-fit, 1fr);
+                h3{
+                    text-align: center;
+                }
+                .thiredSection__title{
+                    padding-top: 0;
+                    height: auto;
+                    overflow: auto;
+                    font-weight: 300;
+                    font-size:20px;
+                    background-color: RGB(126, 201, 126);
+                    border-radius: 30px;
+                    h6{
+                        background-color: aquamarine;
+                    }
+                }
             }
         
     }
