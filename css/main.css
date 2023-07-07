@@ -1,0 +1,74 @@
+body {
+  background-color: #8CD18C;
+}
+body .page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+}
+body .page .title {
+  text-align: center;
+  width: 100%;
+}
+body .page .title .title__p {
+  font-weight: 600;
+}
+body .page .contact__form {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .page .contact__form .inputdiv {
+  width: 100%;
+  text-align: left;
+  text-align: center;
+}
+body .page .contact__form .inputdiv .contact__form_input {
+  width: 80%;
+  height: 45px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #3c8f69;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-width: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+body .page .contact__form .inputdiv .contact__form_message {
+  height: 160px;
+}
+body .page .contact__form .inputdiv .contact__form_button {
+  color: white;
+  height: 60px;
+  background-color: black;
+  font-weight: 600;
+}
+body .page .secondSection {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+body .page .secondSection .imageContainer {
+  background-color: blue;
+  max-width: 50%;
+}
+body .page .secondSection .imageContainer .secondSection_image {
+  border-radius: 50%;
+  max-width: 90%;
+}
+body .page .secondSection .secondSection__div {
+  margin: 0px;
+  display: inline-block;
+  background-color: #8CD18C;
+}
+body .page .secondSection .secondSection__div .accountManagerInto {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
