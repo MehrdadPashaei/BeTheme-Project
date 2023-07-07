@@ -63,17 +63,41 @@ body{
                     }
                 }
             }
-
+            
             .secondSection{
-               hr{
-                width: 99%;
-                height:0.1px;
-               }
+               
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 gap:0px;
-
+                hr{
+                    border: none;
+                    width: 99%;
+                    height:0.5px;
+                    background-color: whitesmoke;
+                    .secondhr{
+                        background-color: black;
+                        width: 80%;
+                        height: 5px;
+                    }
+                   }
+                   
+  .horizontallie {
+    height: 0.5px;
+    border: none;
+    width: 99%;
+    height: 0.5px;
+    background-color: whitesmoke;
+  }
+  .secondsp {
+    background-color: black;
+    width: 80%;
+    height: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
                 .imageContainer{
              
                     max-width: 90%;
@@ -102,30 +126,53 @@ body{
                         text-decoration: none;
                         color: black;
                     }
+                    img{
+                        display: inline;
+                    }
                 }
 
             }
 
             .thiredSection{
+                padding-top: 80px;
                 display: grid;
                 justify-items: center;
                 align-items: center;
                 grid-template-columns: repeat(auto-fit, 1fr);
+              
                 h3{
-                    text-align: center;
+                   text-align: center;
+                   font-size: 35px;
+                   font-weight: 400;
+                    width: 50%;
+                    margin: auto;
                 }
-                .thiredSection__title{
-                    padding-top: 0;
-                    height: auto;
-                    overflow: auto;
-                    font-weight: 300;
-                    font-size:20px;
-                    background-color: RGB(126, 201, 126);
-                    border-radius: 30px;
+               
                     h6{
-                        background-color: aquamarine;
+                        background-color: RGB(126, 201, 126);
+                       border-radius: 20px;
+                       font-size: 15px;
+                       padding-left: 15px;
+                       padding-right:15px;
+                       font-weight: 300;
                     }
-                }
+                
+                    .thiredSection__img{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        img{
+                            text-align: ceter;
+                            width: 20px;
+                            height: 20px;
+                            margin: auto;
+                        }
+                    a{
+                        text-decoration: none;
+                            color: black;
+                    }
+                    }
+                    
             }
         
     }
