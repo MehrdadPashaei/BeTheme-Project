@@ -1,4 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
+  margin: 0;
   background-color: #8CD18C;
 }
 body .page {
@@ -12,17 +20,18 @@ body .page {
 body .page .title {
   margin: auto;
   text-align: center;
-  width: 70%;
+  width: 80%;
 }
 body .page .title .title_h1 {
   font-size: 160px;
   font-weight: 600;
 }
 body .page .title .title__p {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
 }
 body .page .contact__form {
+  padding: 20px;
   margin-top: 70px;
   display: flex;
   align-items: center;
@@ -57,12 +66,15 @@ body .page .contact__form .inputdiv .contact__form_button {
   font-weight: 600;
 }
 body .page .secondSection {
+  padding: 20px;
+  margin: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 0px;
 }
 body .page .secondSection hr {
+  background-color: aqua;
   border: none;
   width: 99%;
   height: 0.5px;
@@ -90,17 +102,23 @@ body .page .secondSection .secondsp {
   transform: translate(-50%, -50%);
 }
 body .page .secondSection .imageContainer {
-  max-width: 90%;
+  max-width: 80%;
 }
 body .page .secondSection .imageContainer .secondSection_image {
   border-radius: 50%;
   max-width: 100%;
 }
+body .page .secondSection .secondSection__div:nth-of-type(6) {
+  padding-bottom: 100px;
+}
 body .page .secondSection .secondSection__div {
+  padding: 6px;
   display: inline-block;
   background-color: #8CD18C;
 }
 body .page .secondSection .secondSection__div h3 {
+  margin: 0;
+  padding: 0;
   font-size: 35px;
   font-weight: 400;
 }
@@ -125,15 +143,22 @@ body .page .thiredSection {
   justify-items: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, 1fr);
+  padding-bottom: 80px;
+}
+body .page .thiredSection .thiredSection__h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 body .page .thiredSection h3 {
+  margin-bottom: 10px;
+  margin-top: 10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: 400;
   width: 50%;
   margin: auto;
 }
-body .page .thiredSection h6 {
+body .page .thiredSection .thiredSection__title {
   background-color: RGB(126, 201, 126);
   border-radius: 20px;
   font-size: 15px;
@@ -145,6 +170,7 @@ body .page .thiredSection .thiredSection__img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 25px;
 }
 body .page .thiredSection .thiredSection__img img {
   text-align: ceter;
@@ -155,4 +181,5 @@ body .page .thiredSection .thiredSection__img img {
 body .page .thiredSection .thiredSection__img a {
   text-decoration: none;
   color: black;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */
