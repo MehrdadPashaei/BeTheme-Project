@@ -22,13 +22,16 @@
     </div>
 
     <div class="contact__form">
-        <div class="inputdiv"><input type="text" placeholder="Name" class="contact__form_input"></div>
-        <div class="inputdiv"><input type="text" placeholder="Surname" class="contact__form_input"></div>
-        <div class="inputdiv"><input type="email" placeholder="Email"class="contact__form_input" required></div>
-        <div class="inputdiv"><input type="text" placeholder="Phone"class="contact__form_input"></div>
-        <div class="inputdiv"><input type="text" placeholder="Subject"class="contact__form_input"></div>
-        <div class="inputdiv"><textarea name="" id="" cols="30" rows="10" placeholder="Message"class="contact__form_input contact__form_message"></textarea></div>
-        <div class="inputdiv"><p><button class="contact__form_input contact__form_button">Send a message</button></p><span></span></div>
+        <form action=""name="contact_form" onsubmit="return validateForm()">
+        <div class="inputdiv name required"><span class="name__error error" style="display:none">❌</span><input name="name" type="text" placeholder="Name" class="contact__form_input"></div>
+        <div class="inputdiv surname required"><span class="surname__error error" style="display:none">❌</span><input name="surname" type="text" placeholder="Surname" class="contact__form_input"></div>
+        <div class="inputdiv email required"><span class="email__error error" style="display:none">❌</span><input name="email" type="text" placeholder="Email"class="contact__form_input" ></div>
+        <div class="inputdiv phone"><input type="text" placeholder="Phone"class="contact__form_input"></div>
+        <div class="inputdiv subject"><input type="text" placeholder="Subject"class="contact__form_input"></div>
+        <div class="inputdiv message"><textarea name="" id="" cols="30" rows="10" placeholder="Message"class="contact__form_input contact__form_message"></textarea></div>
+        <div class="inputdiv button"><input type="submit" name="submit" value="Send a message" class="contact__form_input contact__form_button"></div>
+         </form>
+         <p class="contact_errorMessage"></p>
     </div>
      
     
@@ -42,6 +45,7 @@
         <div class="secondSection__div"><h5><a href="tel:+61383766284">+61 (0) 3 8376 6284</a></h5></div>
         <div class="secondSection__div"><h5><a href="mailto:noreply@envato.com">noreply@envato.com</a></h5></div>
         <div class="horizontallie" style="position:relative;">
+       
             <span></span>
             <span class="secondsp"></span>
           </div>
@@ -64,4 +68,5 @@
     
 </div>
 </body>
+<script src="../javaScript/javaScript.js"></script>
 </html>

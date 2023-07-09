@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -22,29 +23,35 @@ body .page .title {
   text-align: center;
   width: 80%;
 }
-body .page .title .title_h1 {
-  font-size: 160px;
+body .page .title .title__h1 {
+  font-size: 36px;
   font-weight: 600;
+  line-height: 42px;
+}
+@media screen and (min-width: 480px) {
+  body .page .title .title__h1 {
+    font-size: 45px;
+    line-height: 53px;
+  }
 }
 body .page .title .title__p {
   font-size: 13px;
   font-weight: 300;
 }
 body .page .contact__form {
-  padding: 20px;
   margin-top: 70px;
-  display: flex;
   align-items: center;
-  flex-direction: column;
+  width: 100٪;
+  height: auto;
 }
 body .page .contact__form .inputdiv {
   width: 100%;
-  text-align: left;
   text-align: center;
 }
 body .page .contact__form .inputdiv .contact__form_input {
-  width: 80%;
-  height: 45px;
+  width: 85%;
+  height: 47px;
+  padding: 10px;
   border-radius: 10px;
   border-style: solid;
   border-color: #3c8f69;
@@ -64,6 +71,14 @@ body .page .contact__form .inputdiv .contact__form_button {
   height: 60px;
   background-color: black;
   font-weight: 600;
+  cursor: pointer;
+}
+body .page .contact__form .contact_errorMessage {
+  display: block;
+  padding: 10px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 body .page .secondSection {
   padding: 20px;
@@ -107,6 +122,7 @@ body .page .secondSection .imageContainer {
 body .page .secondSection .imageContainer .secondSection_image {
   border-radius: 50%;
   max-width: 100%;
+  height: auto;
 }
 body .page .secondSection .secondSection__div:nth-of-type(6) {
   padding-bottom: 100px;
