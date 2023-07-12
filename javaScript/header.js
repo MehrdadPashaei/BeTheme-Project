@@ -23,25 +23,8 @@ if (navClose) {
 const scrollHeader = () => {
   const header = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  this.scrollY >= 50
+  this.scrollY >= 100
     ? header.classList.add("scroll-header")
     : header.classList.remove("scroll-header");
 };
 window.addEventListener("scroll", scrollHeader);
-
-/* login */
-const loginContent = document.getElementById("nav-login"),
-  loginClose = document.getElementById("login-close");
-
-/*
-function addheadersteaky() {
-  if ($.documentElement.scrollTop > 100) {
-    header.classList.add("headersteaky");
-    header.classList.add("headersteaky__logo-img");
-  } else {
-    header.classList.remove("headersteaky");
-    header.classList.add("header");
-    console.log("add header");
-  }
-}
-*/
